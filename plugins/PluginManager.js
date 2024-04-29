@@ -7,7 +7,7 @@ install({
   const pluginMeta = await rubidiumPlugins.getPluginMetadata(pluginUrl);
   if (pluginMeta) {
     console.log(`[Rubidium Plugins] Install request:`, pluginMeta);
-    const confirmation = confirm(`You are about to install:\n${pluginMeta.name}\nby ${pluginMeta.author ?? "Unknown Author"}`);
+    const confirmation = confirm(`You are about to install:\n${pluginMeta.details.name}\nby ${pluginMeta.details.author ?? "Unknown Author"}`);
     if (confirmation === true) {
       console.log(`[Rubidium Plugins] Installing...`);
       rubidiumPlugins.requestPluginInstall(pluginUrl);
