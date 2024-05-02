@@ -1,6 +1,6 @@
 install({
   name: "Text to Conversation", // Plugin Name
-  icon: "text_snippet // Icon from https://fonts.google.com/icons
+  icon: "text_snippet" // Icon from https://fonts.google.com/icons
 }, function(event, end) {
   const getTextFile = async function() {
     const fileHandles = await window.showOpenFilePicker({ multiple: false, startIn: "documents", excludeAcceptAllOption: true, types: [{
