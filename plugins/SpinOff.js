@@ -28,6 +28,7 @@ install({
     const characterSetup = charContents.payload;
     if (!(characterSetup instanceof Array)) throw new Error("Not a Valid Message Payload");
     event.utils.resetChat();
+    event.utils.changeTitle(`Chat with ${characterName} - Rubidium AI`)
     window._messages = characterSetup;
     document.querySelector(`.chat-content`).appendChild(event.utils.generateMessage(`> *<span style="color: var(--text-warning);">You are now chatting with </span>**${characterName}***\n\n> <span style="color: var(--text-disabled);">This will last until the conversation is cleared<span>`));
   } catch {
