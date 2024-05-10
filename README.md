@@ -1,2 +1,2 @@
 # RubidiumPlugins
-Random Plugins for a certain Rubidium application
+Random Plugins for a certain [Rubidium application](https://rubidium.lhost.dev)
