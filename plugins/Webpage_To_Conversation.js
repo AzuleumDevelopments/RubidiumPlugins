@@ -29,9 +29,9 @@ install({
     }
   }
   const site = prompt("Enter a valid URL to a webpage");
-  if (!site) return console.log(`Canceled`);
+  if (!site) return console.log(`Canceled`), end();
   const content = await fetchPageContents(site);
-  if (!content) return console.log(`Internal Error. Please report`);
+  if (!content) return console.log(`Internal Error. Please report`), end();
   event.utils.addContext([
       `=== User Uploaded Attachment ===`,
       `Type: (Approved, Public Resource) Website Content`,
