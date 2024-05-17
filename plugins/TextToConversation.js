@@ -28,7 +28,7 @@ install({
     });
   };
   const file = await getTextFile();
-  if (!file) return console.log(`Canceled`);
+  if (!file) return console.log(`Canceled`), end();
   event.utils.addContext([
       `=== User Uploaded Attachment ===`,
       `Type: Text File`,
