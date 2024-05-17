@@ -20,7 +20,7 @@ install({
     });
   };
   const file = await getCharFile();
-  if (!file) return console.log(`Canceled`);
+  if (!file) return console.log(`Canceled`), end();
   
   try {
     const charContents = JSON.parse(file.fileContents);
