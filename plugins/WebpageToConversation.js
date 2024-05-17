@@ -22,7 +22,7 @@ install({
         const dom = new DOMParser().parseFromString(contents, "text/html");
         Array.from(dom.querySelectorAll("script")||[]).forEach(s => s.remove());
         Array.from(dom.querySelectorAll("style")||[]).forEach(s => s.remove());
-        return (dom.body.innerText || dom.body.textContent).trim().replace(/\s{3,}/gmi, " ").replace(/\n{3,}/gm, "\n").trim();
+        return (dom.body.innerText || dom.body.textContent).trim().replace(/\s{3,}/gmi, " ").replace(/\n{3,}/gm, " ").trim();
       }
     } catch (err) {
       return "No content available. Reason: Invalid Webpage";
