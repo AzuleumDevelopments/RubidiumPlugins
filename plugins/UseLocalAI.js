@@ -31,7 +31,7 @@ install({
       });
       const promptMessages = "Conversation History:\n" + window._messages.map(e => ("[Message]\n- Message Hidden from User: " + (e._hidden || "False") + "\n- Author Role: " + e.role + "\n- Message Content: " + e.content)).join("\n\n")
       window._isThinking = !0;
-      defaultSession.prompt(prompMessages).then(result => {
+      defaultSession.prompt(promptMessages).then(result => {
         const msg = document.querySelector(`.chat-content`).appendChild(generateMessage("assistant", s, !1));
          window._messages.push({
            role: "assistant",
@@ -46,7 +46,7 @@ install({
          window._isThinking = !1;
        });
     }
-    end();
+    document.querySelector(`.chat-content`).appendChild(patchedMessage), end();
   } catch {
     console.log(`Something went wrong!`);
     const errorMessage = event.utils.generateMessage(`*<span style="color: red;">Use Local AI failed to run. Try reloading or clicking again to patch.</span>*`);
