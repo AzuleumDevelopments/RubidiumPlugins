@@ -1,6 +1,7 @@
 install({
   name: "Plugin Manager", // Plugin Name
   author: "Rubidium Plugins", // (optional) Plugin Author
+  description: "System Plugin for Installing and Removing Plugins",
   icon: "extension" // Icon from https://fonts.google.com/icons
 }, async function(event, end) {
   const pluginUrl = prompt(`Paste a valid link to a plugin`);
