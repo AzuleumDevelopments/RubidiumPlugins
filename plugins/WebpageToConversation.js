@@ -1,5 +1,6 @@
 install({
   name: "Webpage to Conversation", // Plugin Name
+  description: "Attach a Webpage to your Conversation with Rubidium",
   icon: "language" // Icon from https://fonts.google.com/icons
 }, async function(event, end) {
   // Number.prototype.fileSize()
