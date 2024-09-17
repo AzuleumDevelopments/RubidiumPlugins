@@ -1,5 +1,6 @@
 install({
   name: "YouTube Transcript to Conversation", // Plugin Name
+  description: "[Buggy] Attach a YouTube Transcript to your conversation",
   icon: "youtube_activity" // Icon from https://fonts.google.com/icons
 }, async function(event, end) {
   const validQueryDomains = new Set([
