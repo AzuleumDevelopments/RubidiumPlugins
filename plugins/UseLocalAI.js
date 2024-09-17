@@ -1,6 +1,7 @@
 install({
   name: "Use Local AI", // Plugin Name
   author: "Rubidium Plugins", // (optional) Plugin Author
+  description: "[Incomplete] Use Local AI Models instead of Rubidium",
   icon: "robot_2" // Icon from https://fonts.google.com/icons
 }, async function(event, end) {
   const eventButton = event.button;
