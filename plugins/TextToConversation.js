@@ -1,5 +1,6 @@
 install({
   name: "Text to Conversation", // Plugin Name
+  description: "Add Text Files to your Conversation",
   icon: "text_snippet" // Icon from https://fonts.google.com/icons
 }, async function(event, end) {
   // Number.prototype.fileSize()
