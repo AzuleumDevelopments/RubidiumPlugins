@@ -1,5 +1,6 @@
 install({
   name: "Spin Off", // Plugin Name
+  description: "Add Spinoffs to Rubidium to make it act like different characters",
   icon: "cognition" // Icon from https://fonts.google.com/icons
 }, async function(event, end) {
   // Get Character Files
