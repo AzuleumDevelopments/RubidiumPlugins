@@ -45,7 +45,7 @@ install({
   const youtubeVideo = prompt("Enter a YouTube Video URL");
   try {
     const videoId = getVideoID(youtubeVideo);
-    const youtubeTranscript = `/proxy/youtubetranscript.com/?server_vid2=CuVFAe92HCE`;
+    const youtubeTranscript = `/proxy/youtubetranscript.com/?server_vid2=${videoId}`;
     const youtubeTitle = `https://yt-title-parser.utils.lhost.dev/?videoId=${videoId}&noAI=true`;
     const videoTitle = await fetch(youtubeTitle).then(resp => resp.json());
     fetch(youtubeTranscript).then(async resp => {
